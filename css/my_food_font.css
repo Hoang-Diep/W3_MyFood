@@ -1,0 +1,20 @@
+@font-face {
+	font-family: Karma;
+	src: url('../font/Karma/Karma-Regular.ttf');
+}
+@font-face {
+	font-family: 'Karma Light';
+	src: url('../font/Karma/Karma-Light.ttf');
+}
+@font-face {
+	font-family: 'Karma Bold';
+	src: url('../font/Karma/Karma-Bold.ttf');
+}
+@font-face {
+	font-family: 'Karma SemiBold';
+	src: url('../font/Karma/Karma-SemiBold.ttf');
+}
+@font-face {
+	font-family: 'Karma Medium';
+	src: url('../font/Karma/Karma-Medium.ttf');
+}

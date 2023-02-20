@@ -1,0 +1,319 @@
+body {
+	width: 100%;
+	margin: 0;
+	
+	font-family: Karma, sans-serif;
+	font-size: 15px;
+}
+
+	hr {
+		border: 0;
+		border-top: 1px solid #ccc;
+		margin: 100px 0;
+	}
+
+
+
+	/* ==========-==========-==========-========== WEBSITE NAV BEGIN ==========-==========-==========-========== */
+
+		nav {}
+
+			/* ----------.---------- HIDDEN MENU BEGIN ----------.---------- */
+				.nav__menu {
+					position: fixed;
+					left: 0;
+					top: 0;
+
+					z-index: 1;
+
+					box-shadow: 0 0 5px 0 #333;
+					box-sizing: border-box;
+					overflow-x: hidden;
+
+					width: 0;
+					height: 100%;
+					margin: 0;
+					padding: 30px 0;
+
+					background: #fff;
+
+					font-size: 24px;
+
+					transition: 0.3s;
+				}
+
+					/* ---------- HIDDEN MENU BUTTON BEGIN ---------- */
+						.nav__menu a, .nav__menu span  {
+							display: block;
+
+							box-sizing: border-box;
+
+							padding: 25px 50px; 
+
+							color: #000;
+							text-decoration: none;
+
+							cursor: pointer;
+							transition: 0.3s;
+						}
+						.nav__menu a:hover, .nav__menu span:hover {background: #f2f2f2;}
+					/* ---------- HIDDEN MENU BUTTON END ---------- */
+
+			/* ----------.---------- HIDDEN MENU END ----------.---------- */
+
+	/* ==========-==========-==========-========== WEBSITE NAV END ==========-==========-==========-========== */
+
+
+
+
+
+	/* ==========-==========-==========-========== WEBSITE HEADER BEGIN ==========-==========-==========-========== */
+
+		header {
+			position: relative;
+			
+			height: 180px; 
+			width: 100%;
+		}
+
+			.header--fixed {
+				position: fixed;
+				top: 0;
+				
+				box-sizing: border-box;
+				
+				width: 100%;
+				height: 80px;
+				padding-right: 25px;
+
+				background: #fff;
+			}
+
+				.header--center {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					width: 80%;
+					max-width: 1200px;
+					margin: auto;
+				}
+
+					header h1 {font-size: 32px; font-weight: 100;}
+
+					.header__text {font-size: 24px;}
+
+					.menu-open-btn {
+						padding: 22px;
+
+						font-size: 25px; 
+
+						cursor: pointer;
+						transition: 0.3s;
+					}
+					.menu-open-btn:hover {background: #cccccc;}
+	/* ==========-==========-==========-========== WEBSITE HEADER END ==========-==========-==========-========== */
+
+
+
+
+
+	/* ==========-==========-==========-========== WEBSITE MAIN BEGIN ==========-==========-==========-========== */
+
+		main {
+			width: 80%;
+			max-width: 1200px; 
+			margin: auto;
+		}
+
+			/* ==========-==========-========== ARTICLE FOOD BEGIN ==========-==========-========== */
+
+				/* ----------.---------- FOOD ITEMS BEGIN ----------.---------- */
+					.food__container {
+						display: grid;
+						grid-template-columns: repeat(4, 2fr);
+						grid-template-rows: repeat(2, 1fr);
+						grid-gap: 15px 25px;
+					}
+						.food__items {text-align: center;}
+
+							.food__items img {width: 100%; object-fit: cover;}
+							.food__items h3 {
+								margin: 10px 0;
+
+								font-size: 26px; 
+								font-weight: 100;
+							}
+				/* ----------.---------- FOOD ITEMS END ----------.---------- */
+
+				/* ----------.---------- FOOD PAGINATION BEGIN ----------.---------- */
+					.pagination {
+						width: 100%;	
+						margin: 50px 0;
+
+						text-align: center;
+					}
+						.pagination a {
+							display: inline-block;
+							
+							border: 0;
+							padding: 10px 17px;
+							margin: 0;
+
+							color: #000;
+
+							text-decoration: none;
+
+							transition: 0.1s;
+						}
+						.pagination a:hover {background: #000; color: #fff;}
+
+						.pagination a:nth-child(2) {background: #000; color: #fff;}
+						.pagination a:nth-child(2):hover {background: #ccc; color: #000;}
+				/* ----------.---------- FOOD PAGINATION END ----------.---------- */
+
+			/* ==========-==========-========== ARTICLE FOOD END ==========-==========-========== */
+
+
+			/* ==========-==========-========== ARTICLE ABOUT BEGIN ==========-==========-========== */
+
+				article#about {text-align: center;}
+				article#about img {width: 100%;}
+				article#about h2 {font-size: 24px; font-weight: 100;}
+				article#about strong {font-size: 18px;}
+
+			/* ==========-==========-========== ARTICLE ABOUT END ==========-==========-========== */
+
+	/* ==========-==========-==========-========== WEBSITE MAIN END ==========-==========-==========-========== */
+
+
+
+
+
+
+	/* ==========-==========-==========-========== WEBSITE FOOTER BEGIN ==========-==========-==========-========== */
+
+		footer {
+			display: flex; 
+			justify-content: center;
+			
+			width: 80%;
+			max-width: 1200px;
+			margin: auto;
+		}
+
+			.footer__card {width: 385px; padding: 10px;}
+
+			.footer__card h3 {font-size: 24px; font-weight: 100;}
+
+			/* ----------.---------- BLOG POSTS BEGIN ----------.---------- */
+				.posts {overflow: hidden; margin-top: 30px;}
+				.posts img {
+					float: left;
+
+					width: 50px;
+					margin: 0 10px;
+				}
+					.text--large {font-size: 18px;}
+			/* ----------.---------- BLOG POSTS END ----------.---------- */
+
+
+			/* ----------.---------- POPULAR TAGS BEGIN ----------.---------- */
+				/*.drop {margin: 15px 0;}*/
+					.tags {
+						display: inline-block;
+						
+						margin-bottom: 20px;
+						padding: 5px 7px;
+
+						background: #616161;
+						color: #fff;
+
+						font-family: serif;
+						font-size: 14px;
+					}
+					.first-tag {padding: 7px 10px; background: #000;}
+			/* ----------.---------- POPULAR TAGS END ----------.---------- */
+
+	/* ==========-==========-==========-========== WEBSITE FOOTER END ==========-==========-==========-========== */
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) and (min-width: 481px) {
+	body {font-size: 14px;}
+	
+	/* ==========-==========-========== RESPONSIVE TABLET HEADER BEGIN ==========-==========-========== */
+	
+		.header--center {width: 95%;}
+	
+	/* ==========-==========-========== RESPONSIVE TABLET HEADER END ==========-==========-========== */
+	
+	
+	
+	
+	
+	/* ==========-==========-========== RESPONSIVE TABLET MAIN BEGIN ==========-==========-========== */
+	
+		main {width: 90%;}
+	
+			.food__container {grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat (4, 1fr);}
+	
+				.tags {padding: 3px 5px; font-size: 12px;}
+				.first-tag {padding: 5px 7px; background: #000;}
+	
+	
+	/* ==========-==========-========== RESPONSIVE TABLET MAIN END ==========-==========-========== */
+	
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+	body {font-size: 14px;}
+	
+	
+	/* ==========-==========-========== RESPONSIVE MOBILE HEADER BEGIN ==========-==========-========== */
+	
+		.header--center {width: 95%;}
+	
+	
+	/* ==========-==========-========== RESPONSIVE MOBILE HEADER END ==========-==========-==========- */
+	
+	
+	
+	
+	
+	/* ==========-==========-========== RESPONSIVE MOBILE MAIN BEGIN ==========-==========-========== */
+	
+		main {width: 90%;}
+	
+			.food__container {display: block; width: 100%;}
+				.food__items {width: 100%; margin-bottom: 25px;}
+	
+	/* ==========-==========-========== RESPONSIVE MOBILE MAIN END ==========-==========-========== */
+	
+	
+	
+	
+	
+	/* ==========-==========-========== RESPONSIVE MOBILE FOOTER BEGIN ==========-==========-========== */
+	
+		footer {display: block; width: 90%; margin: auto;}
+			.footer__card {width: 100%;}
+	
+				.tags {padding: 3px 5px; font-size: 12px;}
+				.first-tag {padding: 5px 7px; background: #000;}
+	
+	/* ==========-==========-========== RESPONSIVE MOBILE FOOTER END ==========-==========-========== */
+	
+}
